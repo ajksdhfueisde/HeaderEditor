@@ -40,6 +40,8 @@ jobs:
     - name: Install dependencies
       run: yarn install --frozen-lockfile
     - name: Build
+      run: npm run build
+    - name: Pack
       run: npm run pack --platform crx
     - name: Upload bundles
       uses: actions/upload-artifact@v1
