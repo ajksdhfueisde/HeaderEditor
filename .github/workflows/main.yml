@@ -42,7 +42,7 @@ jobs:
     - name: Build
       run: npm run build
     - name: Pack
-      run: npm run pack --platform crx
+      run: npm run pack
     - name: Upload bundles
       uses: actions/upload-artifact@v1
       with:
